@@ -1,0 +1,42 @@
+
+{% extends "base_generic.html" %}
+
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'log/styles.css' %}">
+<div style="font-family: Verdana, Geneva, Tahoma, sans-serif;">
+  <h1 style="color: brown;">COVID BROADCASTS</h1>
+  <DIV style="text-align: center;">
+  <p>Welcome to Covid Broadcast, a website developed by <em>Frimpong Josiah</em>!</p>
+</div>
+  <h2></h2>
+  <p style="text-align: center;"> <strong>Want to be up to date with news surrounding covid-19 in Ghana?</strong></p> 
+    <p style="text-align: center;">This website gives you all the latest updates on covid-19</p>
+  <ul>
+    <a href="{% url 'speeches' %}"> <button style="color: rgb(182, 19, 19);">Click here to access recent speeches</button> </a>
+    
+  </ul>
+</DIV>
+
+{% endblock %}
+
+
+ 
+
+  
+  
+
+
+
+
+
+
+<!-- <p><a href="{{ speech.get_absolute_url }}">{{ speech.title }}</a> ({{speech.speaker}})({{ speech.date }})</p> -->
+
+
+  <!-- {% for speaker in speaker_list %}
+    <li>
+      <a href="{{ speaker.get_absolute_url }}">{{ speaker }}</a>
+    </li>
+  {% endfor %} -->

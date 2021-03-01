@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'log/styles.css' %}">
+  <div style="color: brown;"><h1 style="font-size: 30px;" >Title: {{ speech.title }}</h1></div>
+
+  <p><strong>Author:</strong> <a href="{% url 'speaker-detail' speech.speaker.pk %}">{{ speech.speaker }}</a></p> <!-- author detail link not yet defined -->
+  <p><strong>Post Date:</strong> {{ speech.date }}</p>
+  <p><strong>summary:</strong> {{ speech.summary }}</p>
+  
+  
+  
+{% endblock %}
